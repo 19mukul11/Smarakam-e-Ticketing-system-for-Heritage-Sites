@@ -1,0 +1,280 @@
+/* UTILITIES */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0px;
+    padding: 0px;
+}
+
+.vcenter{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform : translateY(-50%);
+    transform: translateY(-50%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    margin: 10px auto;
+    width: 100%;
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+
+#form-response{
+    display: none;
+}
+
+/*******************************************************************/
+
+/***********  HEADER *************/
+
+#logo{
+    width: 60%;
+}
+
+#profile-icon{
+    cursor: pointer;
+}
+
+#user-info{
+   list-style: none;
+    width:200px;
+    z-index: 10;
+    background-color: yellow;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 10px 0px;
+    height: 100%;
+    display:none;
+}
+
+
+#navbar{
+    background-color: black;
+    color:white;
+}
+
+#navbar ul{
+    display: flex;
+    list-style:none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 5px 20px;
+}
+
+#navbar ul li:hover{
+    background-color: grey;
+    color: black;
+}
+
+@media (max-width:430px){
+
+    #navbar ul li a{
+        font-size: 14px;
+        margin: 5px 10px;
+    }
+}
+
+
+@media (max-width:575px){
+  
+    #navbar{
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    
+    #user-info{
+        height: 100px;
+        width: 100%;
+    }
+    
+  }
+
+
+/******************* FOOTER *********************/
+#footer{
+    background-color: black;
+    color: white;
+}
+
+  
+
+/******************* USER HOME PAGE *******************/
+
+.home-grid-img{
+    width: 50%;
+/*    height: 200px;*/
+}
+
+.monument-card:hover{
+    background-color: #cbccce;
+    box-shadow: 3px 3px 3px grey;
+    cursor:pointer;
+}
+
+/************* MONUMENT PAGE USER*************/
+ .slotBox {
+            text-align: center;
+            border-radius: 8px;
+            padding: 10px;
+            font-weight: bold;
+            width: 90%;
+            margin: 5px auto;
+        }
+        .slotBox:hover{
+            box-shadow: 3px 3px 10px 3px grey;
+            
+        }
+
+        .green {
+            color: white;
+            border: 3px solid darkgreen;
+            background-color: green;
+        }
+
+        .red {
+            color: maroon;
+            border: 1px solid red;
+            background-color: lightcoral;
+        }
+
+/*************************************************************************/
+
+
+/******************* VIEW BOOKINGS PAGE  ***********************/
+.booking-box{
+    padding-top: 10px;
+      padding-bottom: 10px;
+    border: 1px solid grey;
+    font-weight: bold;
+}
+
+#filter-box{
+    background-color:whitesmoke;
+    width: 300px;
+    border: 1px solid grey;
+    padding:5px;
+    margin:0px auto
+}
+
+/*************** ADMIN HEADER ***************/
+#admin-info{
+    position: absolute;
+    top:90px;
+    left:600px;
+}
+
+/****************** ADMIN PANEL **********************/
+
+#side-panel{
+    background-color: #1d1c1c;
+}
+#sidebar-list{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+#sidebar-list a{
+   
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+#sidebar-list a:hover{
+    background-color: rgb(158, 143, 143);
+}
+
+#home-panel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px 100px;
+}
+
+.tile{
+    background-color: cornflowerblue;
+    height: 250px;
+    /* border: 1px solid black ;*/
+    font-size: 30px;
+    text-align: center;
+} 
+.tile:hover{
+    box-shadow: 3px 3px 5px 5px rgb(158, 143, 143);
+    background-color: #ffff80;
+}
+
+.tile span b{
+    font-size: 60px;
+}
+
+        /* MONUMENT FORM*/
+#add-monument-form, #add-validator-form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    margin: 30px auto;
+    width: 80%;
+    padding: 20px 35px;
+    border-radius: 12px;
+}
+
+#add-monument-form input, #add-monument-form select, #add-validator-form input{
+
+    width: 100%;
+    margin: 10px auto;
+
+}
+
+
+
+
+
+
+
+
+
+/************** LOGIN - REGISTER FORM PAGES ************/
+
+#login-form, #register-form, #admin-login-form{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+}
+
+@media (max-width:480px){
+
+    #login-form, #register-form, #admin-login-form{
+        margin: auto;
+        width:90%;
+    }
+}
+
+/************************************************************/
